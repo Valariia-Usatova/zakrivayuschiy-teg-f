@@ -12,3 +12,36 @@
 
 Кроме этого, не меняйте HTML переключателя тем. Его разметка также гарантирует работу своего скрипта.
 */
+
+@keyframes pulse {
+  0% {
+    left: -18px;
+  }
+  50% {
+    left: -14px;
+  }
+  100% {
+    left: -18px;
+  }
+}
+
+@keyframes core {
+  100% {
+    fill: var(--accent-color-heart);
+  }
+}
+
+@keyframes main-body {
+  100% {
+    fill: var(--accent-color-heart);
+  }
+}
+
+@keyframes sparks {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}

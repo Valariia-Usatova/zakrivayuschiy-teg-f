@@ -4,3 +4,97 @@
 ✦ theme-light — класс светлой темы
 ✦ не забудьте описать стили для изменения темы через медизапрос пользовательских предпочтений
 */
+
+:root.theme-light {
+  --accent-background-color: #fff;
+  --accent-color: #000;
+  --font-weight-main: 400;
+  --font-weight-header: 700;
+  --background-image: repeating-linear-gradient(
+      to right,
+      #d3d3d3 0 2px,
+      rgba(0, 0, 0, 0) 2px 4px
+    ),
+    repeating-linear-gradient(
+      to bottom,
+      #d3d3d3 0 2px,
+      rgba(0, 0, 0, 0) 2px 4px
+    ),
+    linear-gradient(to bottom, #e7e7e7 0.01%, #1a1a1a);
+  --color-shadow-html: #fff;
+  --accent-color-heart: #000;
+  --accent-color-button-text: #fff;
+  --accent-color-contour: rgba(256, 0, 0, 0);
+  --accent-color-heart-body: #ff0000;
+  --accent-color-floopy: #fff;
+}
+
+:root.theme-dark {
+  --accent-background-color: #000;
+  --accent-color: #00cc14;
+  --font-weight-main: 465;
+  --font-weight-header: 785;
+  --background-image: repeating-linear-gradient(
+      to right,
+      #000 0 2px,
+      rgba(0, 0, 0, 0) 2px 4px
+    ),
+    repeating-linear-gradient(to bottom, #000 0 2px, rgba(0, 0, 0, 0) 2px 4px),
+    linear-gradient(to bottom, #007f0c 0.01%, #004306);
+  --color-shadow-html: #000;
+  --accent-color-heart: #00cc14;
+  --accent-color-button-text: #00cc14;
+  --accent-color-contour: #00cc14;
+  --accent-color-contour: rgba(256, 0, 0, 0);
+  --accent-color-heart-body: #ff0000;
+  --accent-color-floopy: #00cc14;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --accent-background-color: #000;
+    --accent-color: #00cc14;
+    --font-weight-main: 465;
+    --font-weight-header: 785;
+    --background-image: repeating-linear-gradient(
+        to right,
+        #000 0 2px,
+        rgba(0, 0, 0, 0) 2px 4px
+      ),
+      repeating-linear-gradient(to bottom, #000 0 2px, rgba(0, 0, 0, 0) 2px 4px),
+      linear-gradient(to bottom, #007f0c 0.01%, #004306);
+    --color-shadow-html: #000;
+    --accent-color-heart: #00cc14;
+    --accent-color-button-text: #00cc14;
+    --accent-color-contour: #00cc14;
+    --accent-color-contour: rgba(256, 0, 0, 0);
+    --accent-color-heart-body: #ff0000;
+    --accent-color-floopy: #00cc14;
+  }
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    --accent-background-color: #fff;
+    --accent-color: #000;
+    --font-weight-main: 400;
+    --font-weight-header: 700;
+    --background-image: repeating-linear-gradient(
+        to right,
+        #d3d3d3 0 2px,
+        rgba(0, 0, 0, 0) 2px 4px
+      ),
+      repeating-linear-gradient(
+        to bottom,
+        #d3d3d3 0 2px,
+        rgba(0, 0, 0, 0) 2px 4px
+      ),
+      linear-gradient(to bottom, #e7e7e7 0.01%, #1a1a1a);
+    --color-shadow-html: #fff;
+    --accent-color-heart: #000;
+    --accent-color-button-text: #fff;
+    --accent-color-contour: rgba(256, 0, 0, 0);
+    --accent-color-heart-body: #ff0000;
+    --accent-color-floopy: #fff;
+  }
+}
