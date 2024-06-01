@@ -1,13 +1,13 @@
 /* В этом файле будут храниться все значения переменных в исходном состоянии, а так же их изменения в зависимости от ширины устройства */
 :root {
-  --font-press-start-2p: 'PressStart2P', fantasy;
-  --font-inter-variable: 'Inter-Variable', sans-serif;
+  --font-press-start-2p: "PressStart2P";
+  --font-inter-variable: "Inter-Variable";
   --font-weight-main: 400;
   --font-weight-header: 700;
   --accent-background-color: #fff;
   --accent-color: #000;
   --accent-color-button-text: #fff;
-  --accent-color-contour: rgba(256, 0, 0, 0); 
-  --accent-color-heart-body: #FF0000;
+  --accent-color-contour: rgba(256, 0, 0, 0);
+  --accent-color-heart-body: #ff0000;
   --accent-color-floopy: #fff;
 }

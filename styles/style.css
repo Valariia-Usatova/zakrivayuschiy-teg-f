@@ -18,7 +18,7 @@
   min-block-size: 100dvb;
   padding: 100px 370px 0;
   font-family: var(--font-inter-variable, sans-serif);
-  font-variation-settings: "wdht" var(--font-weight-main);
+  font-variation-settings: "wdht" var(--font-weight-main), "wdht" var(--font-weight-header);
   background-color: var(--accent-background-color);
   color: var(--accent-color);
   background-size: cover;
@@ -93,7 +93,7 @@
   width: 0%;
   height: 2px;
   background-color: var(--accent-color);
-  transition: all 0.5s;
+  transition: 0.5s;
 }
 
 .card__item {
