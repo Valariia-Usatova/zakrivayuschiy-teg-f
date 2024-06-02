@@ -50,7 +50,7 @@
 }
 
 .header__text {
-  /* margin-bottom: 22px; */
+  font-size: clamp(0.875rem, 0.6769rem + 0.8451vw, 1.4375rem);
   line-height: 23px;
   font-size: 23px;
   text-transform: uppercase;
@@ -58,7 +58,6 @@
 
 .theme-menu {
   margin-top: 25px;
-  /* margin-bottom: 21px; */
 }
 
 .theme-menu__list {
@@ -112,9 +111,16 @@
   border: 2px solid var(--accent-color);
 }
 
+.card__title {
+  padding: 5px 10px;
+  font-variation-settings: "wght" var(--font-weight-header);
+  font-size: 18px;
+  border-bottom: 2px solid var(--accent-color);
+}
+
 .card__item-watermark-and-image {
   position: relative;
-  border-bottom: 1px solid var(--accent-color);
+  border-bottom: 2px solid var(--accent-color);
 }
 
 .card-item-watermark {
@@ -123,7 +129,6 @@
   font-family: var(--font-press-start-2p);
   mix-blend-mode: hard-light;
   font-size: 14px;
-  line-height: 14px;
   top: 25px;
   right: 25px;
   opacity: 0.5;
@@ -144,14 +149,6 @@
   padding: 25px;
 }
 
-.card__title {
-  padding: 4px 10px;
-  font-variation-settings: "wght" var(--font-weight-header);
-  font-size: 18px;
-  line-height: 21.78px;
-  border-bottom: 2px solid var(--accent-color);
-}
-
 .card__item-image {
   display: block;
   object-fit: cover;
@@ -162,7 +159,7 @@
 .card__story {
   font-size: 18px;
   line-height: 21px;
-  margin-bottom: 27px;
+  margin-bottom: 25px;
 }
 
 .card__memory {
@@ -184,7 +181,7 @@
 .dialog__button {
   position: relative;
   display: flex;
-  width: 130px;
+  min-width: 130px;
   justify-content: center;
   text-align: center;
   align-items: center;
@@ -225,10 +222,6 @@
   outline: none;
   opacity: 0.6;
 }
-
-/* .theme-menu__button:focus-visible {
-  scalex: 1;
-} */
 
 .theme-menu__button:focus-visible::after {
   width: 100%;
@@ -393,13 +386,9 @@
   background-color: rgb(0 0 0 / 0.75);
 }
 
-@media (width <= 400px) {
+@media (width <= 500px) {
   .container {
     width: 100%;
-  }
-
-  .header {
-    min-width: 371px;
   }
 
   .header__title {
@@ -408,6 +397,10 @@
 
   .card-item-watermark {
     right: 13px;
+  }
+
+  .card__story {
+    margin-bottom: 24px;
   }
 
   .header__text {
