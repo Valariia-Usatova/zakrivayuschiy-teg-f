@@ -108,6 +108,7 @@
 
 .card__item-watermark-and-image {
   position: relative;
+  border-bottom: 2px solid var(--accent-color);
 }
 
 .card-item-watermark {
@@ -142,10 +143,6 @@
   font-variation-settings: "wght" var(--font-weight-header);
   font-size: 18px;
   line-height: 21.78px;
-  border-bottom: 2px solid var(--accent-color);
-}
-
-.card__item-watermark-and-image {
   border-bottom: 2px solid var(--accent-color);
 }
 
