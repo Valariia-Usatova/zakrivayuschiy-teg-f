@@ -52,7 +52,6 @@
 .header__text {
   font-size: clamp(0.875rem, 0.6769rem + 0.8451vw, 1.4375rem);
   line-height: 23px;
-  font-size: 23px;
   text-transform: uppercase;
 }
 
