@@ -18,7 +18,7 @@
   min-block-size: 100dvb;
   padding: 100px 370px 0;
   font-family: var(--font-inter-variable, sans-serif);
-  font-variation-settings: "wdht" var(--font-weight-main), "wdht" var(--font-weight-header);
+  font-variation-settings: "wdht" var(--font-weight-main), 'slnt' 0;
   background-color: var(--accent-background-color);
   color: var(--accent-color);
   background-size: cover;
@@ -131,7 +131,7 @@
 
 .card__title {
   padding: 3px 10px;
-  font-weight: var(--font-weight-header);
+  font-variation-settings: var(--font-weight-header), 'slnt' 0;
   font-size: 18px;
   line-height: 21.78px;
   border-bottom: 2px solid var(--accent-color);
@@ -415,7 +415,7 @@
 }
 
 .image-7 {
-  filter: saturate(80%) blur(25px);
+  filter: blur(4px);
 }
 
 .image-8 {
