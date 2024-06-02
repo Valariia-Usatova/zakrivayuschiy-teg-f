@@ -16,7 +16,7 @@
 .page {
   min-inline-size: 320px;
   min-block-size: 100dvb;
-  padding: 100px 370px 0;
+  padding: 100px 0 0 0;
   font-family: var(--font-inter-variable, sans-serif);
   font-variation-settings: "wght" var(--font-weight-main), "slnt" 0;
   background-color: var(--accent-background-color);
@@ -26,8 +26,13 @@
   background-image: var(--background-image);
 }
 
+.container {
+  width: clamp(375px, 50%, 700px);
+  margin: 0 auto;
+}
+
 .header {
-  padding: 136px 120.5px 0;
+  padding: clamp(7.5rem, 7.1479rem + 1.5023vw, 8.5rem) 0 21px 0;
   margin-bottom: 100px;
   display: flex;
   flex-direction: column;
@@ -41,10 +46,11 @@
 .header__title {
   font-size: clamp(3.0625rem, 2.7104rem + 1.5023vw, 4.0625rem);
   line-height: 65px;
+  margin-bottom: 20px;
 }
 
 .header__text {
-  margin-top: 20px;
+  /* margin-bottom: 22px; */
   line-height: 23px;
   font-size: 23px;
   text-transform: uppercase;
@@ -52,7 +58,7 @@
 
 .theme-menu {
   margin-top: 25px;
-  margin-bottom: 21px;
+  /* margin-bottom: 21px; */
 }
 
 .theme-menu__list {
@@ -108,7 +114,7 @@
 
 .card__item-watermark-and-image {
   position: relative;
-  border-bottom: 2px solid var(--accent-color);
+  border-bottom: 1px solid var(--accent-color);
 }
 
 .card-item-watermark {
@@ -220,9 +226,9 @@
   opacity: 0.6;
 }
 
-.theme-menu__button:focus-visible {
+/* .theme-menu__button:focus-visible {
   scalex: 1;
-}
+} */
 
 .theme-menu__button:focus-visible::after {
   width: 100%;
@@ -387,23 +393,38 @@
   background-color: rgb(0 0 0 / 0.75);
 }
 
-@media (width <= 375px) {
-  .page {
-    padding: 100px 2px;
+@media (width <= 400px) {
+  .container {
+    width: 100%;
   }
 
   .header {
     min-width: 371px;
-    padding: 120px 14px 0;
   }
 
   .header__title {
     line-height: 49px;
   }
 
+  .card-item-watermark {
+    right: 13px;
+  }
+
   .header__text {
     font-size: 14px;
     line-height: 14px;
+  }
+
+  .footer__button {
+    flex-direction: column;
+    gap: 8px;
+    width: 306px;
+    height: 80px;
+  }
+
+  .footer__button .floppy__image {
+    width: 28px;
+    height: 28px;
   }
 }
 
