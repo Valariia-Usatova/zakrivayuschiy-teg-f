@@ -29,7 +29,6 @@
 .header {
   padding: 136px 120.5px 0;
   margin-bottom: 100px;
-  max-width: 696px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -96,10 +95,15 @@
   transition: 0.5s;
 }
 
+.card__list {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+
 .card__item {
   background-color: var(--accent-background-color);
   border: 2px solid var(--accent-color);
-  margin: 0 auto 50px auto;
 }
 
 .card__item-watermark-and-image {
@@ -129,11 +133,19 @@
   }
 }
 
+.card__bottom {
+  padding: 25px;
+}
+
 .card__title {
-  padding: 3px 10px;
+  padding: 4px 10px;
   font-variation-settings: "wght" var(--font-weight-header);
   font-size: 18px;
   line-height: 21.78px;
+  border-bottom: 2px solid var(--accent-color);
+}
+
+.card__item-watermark-and-image {
   border-bottom: 2px solid var(--accent-color);
 }
 
@@ -141,34 +153,39 @@
   display: block;
   object-fit: cover;
   width: 100%;
-  border-bottom: 2px solid var(--accent-color);
+  aspect-ratio: 1/1;
 }
 
-.card__text {
-  margin: 25px 25px 27px 25px;
+.card__story {
   font-size: 18px;
-  line-height: 22px;
+  line-height: 21px;
+  margin-bottom: 27px;
+}
+
+.card__memory {
+  margin-bottom: 25px;
+  font-size: 18px;
 }
 
 .card__button {
   display: flex;
   justify-content: end;
-  align-items: center;
-  margin: 25px 25px 25px 0;
+}
+
+.card__icon-button {
+  max-height: 38px;
 }
 
 .card__like-button,
 .modal__window-button,
 .dialog__button {
   position: relative;
-  padding: 9px 17px;
   display: flex;
   width: 130px;
-  height: 38px;
   justify-content: center;
   text-align: center;
+  align-items: center;
   border: 2px solid var(--accent-color);
-  margin-left: 6px;
   transition: 0.5s ease-in-out;
 }
 
@@ -248,7 +265,7 @@
 
 .card__icon-button:focus-visible,
 .footer_button:focus-visible {
-  outline: 2px solid var(--accent-color);
+  border: 2px solid var(--accent-color);
 }
 
 .counter {
@@ -306,7 +323,7 @@
 
 .card__icon-button:hover .main-body {
   fill: var(--accent-color-heart);
-  transition: fill 0.3s 0.5s linear;
+  transition: fill 0.3s 0.05s linear;
 }
 
 .footer__button {
@@ -335,7 +352,7 @@
 .dialog {
   font-family: var(--font-press-start-2p);
   font-size: 14px;
-  max-inline-size: clamp(21.3125rem, 21.0484rem + 1.1268vw, 22.0625rem);
+  max-width: clamp(21.3125rem, 21.0484rem + 1.1268vw, 22.0625rem);
   border: 2px solid var(--accent-color);
   background-color: var(--accent-background-color);
   padding: 28px;
