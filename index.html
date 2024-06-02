@@ -580,13 +580,15 @@
           </svg>
           <span class="dialog__text">вставьте дискету, чтобы продолжить</span>
         </div>
-        <button
-          class="dialog__button"
-          type="button"
-          onclick="window['dialog'].close()"
-        >
-          <span class="button__text">ОК</span>
-        </button>
+        <form method="dialog">
+          <button
+            class="dialog__button"
+            type="button"
+            onclick="window['dialog'].close()"
+          >
+            <span class="button__text">ОК</span>
+          </button>
+        </form>
       </dialog>
     </footer>
     <script src="./scripts/like.js"></script>
