@@ -24,7 +24,8 @@
   --color-shadow-html: #fff;
   --accent-color-heart: #000;
   --accent-color-button-text: #fff;
-  --accent-color-contour: rgba(256, 0, 0, 0);
+  --accent-color-contour: #000;
+  --accent-color-contour-transparent: rgba(256, 0, 0, 0);
   --accent-color-heart-body: #ff0000;
   --accent-color-floopy: #fff;
 }
@@ -45,7 +46,7 @@
   --accent-color-heart: #00cc14;
   --accent-color-button-text: #00cc14;
   --accent-color-contour: #00cc14;
-  --accent-color-contour: rgba(256, 0, 0, 0);
+  --accent-color-transparent: rgba(256, 0, 0, 0);
   --accent-color-heart-body: #ff0000;
   --accent-color-floopy: #00cc14;
 }
@@ -67,7 +68,7 @@
     --accent-color-heart: #00cc14;
     --accent-color-button-text: #00cc14;
     --accent-color-contour: #00cc14;
-    --accent-color-contour: rgba(256, 0, 0, 0);
+    --accent-color-transparent: rgba(256, 0, 0, 0);
     --accent-color-heart-body: #ff0000;
     --accent-color-floopy: #00cc14;
   }
@@ -93,7 +94,8 @@
     --color-shadow-html: #fff;
     --accent-color-heart: #000;
     --accent-color-button-text: #fff;
-    --accent-color-contour: rgba(256, 0, 0, 0);
+    --accent-color-contour: #000;
+    --accent-color-contour-transparent: rgba(256, 0, 0, 0);
     --accent-color-heart-body: #ff0000;
     --accent-color-floopy: #fff;
   }

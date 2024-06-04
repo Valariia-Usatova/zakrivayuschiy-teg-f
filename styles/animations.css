@@ -14,34 +14,33 @@
 */
 
 @keyframes pulse {
-  0% {
+  from {
     left: -18px;
   }
   50% {
     left: -14px;
   }
-  100% {
+  to {
     left: -18px;
   }
 }
 
-@keyframes core {
-  100% {
-    fill: var(--accent-color-heart);
+@keyframes heart {
+  from {
+    scale: 1;
+    transform-origin: 50% 50%;
   }
-}
-
-@keyframes main-body {
-  100% {
-    fill: var(--accent-color-heart);
+  to {
+    scale: 1.5;
+    transform-origin: 50% 50%;
   }
 }
 
 @keyframes sparks {
-  0% {
+  from {
     opacity: 0;
   }
-  100% {
+  to {
     opacity: 1;
   }
 }
