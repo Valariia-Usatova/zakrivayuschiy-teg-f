@@ -270,12 +270,10 @@
 
 .main-body {
   fill: var(--accent-color-contour-transparent);
-  transition: fill 0.3 linear;
 }
 
 .core {
   fill: var(--accent-color-contour-transparent);
-  transition: fill 0.3 linear;
 }
 
 .sparks {
